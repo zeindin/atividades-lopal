@@ -1,0 +1,11 @@
+let distancia = Number(prompt('Digite a distância em km do seu destino: '))
+let gaso = Number(prompt("Digite quantos km por litro seu veículo faz: "))
+let preco = Number(prompt("Digite quanto custa em reais, a gasolina do seu carro por litro: ")).toFixed(2)
+
+let qtdGaso = ((distancia*2)/gaso).toFixed(2)
+let precototal = (qtdGaso*preco).toFixed(2)
+let precokm = (precototal/(distancia*2)).toFixed(2)
+console.log(distancia)
+console.log(gaso)
+console.log(preco)
+console.log(`A quantidade de gasolina gasta na ida e volta é ${qtdGaso}L. O preço total da gasolina na ida e volta é R$${precototal} e o preço por km é R$${precokm} `)
